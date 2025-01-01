@@ -23,3 +23,7 @@ Traders
 `Transportadoras`: Os detalhes dos transportadores que enviam os produtos dos comerciantes para os clientes finais
 
 `Pedidos e Detalhes do Pedido`: Transações de pedidos de vendas ocorrendo entre os clientes e a empresa
+
+
+### Relacionamento entre as tabelas
+![relacao_sql](pictures/relacao_sql.png)
