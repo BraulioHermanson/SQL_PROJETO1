@@ -27,3 +27,35 @@ Traders
 
 ### Relacionamento entre as tabelas
 ![relacao_sql](pictures/relacao_sql.png)
+
+# Configuração Inicial
+
+## Manualmente
+Utilize o arquivo SQL fornecido, nortwhind.sql, para popular o seu banco de dados.
+
+## Com Docker e Docker Compose
+Pré-requisito: Instale o [Docker Engine](https://docs.docker.com/engine/install/ubuntu/) no seu ambiente Linux.
+
+### Começar com Docker
+- Instalar Docker Compose
+
+### Passos para configuração com Docker:
+1. Iniciar o Docker Compose Execute o comando abaixo para subir os serviços:
+
+~~~html
+docker-compose up
+~~~
+
+2. Conectar o PgAdmin Acesse o PgAdmin pelo URL: http://localhost:5050, com a senha `postgres`.
+
+~~~html
+* **Aba General**:
+    * Nome: db
+* **Aba Connection**:
+    * Nome do host: db
+    * Nome de usuário: postgres
+    * Senha: postgres Em seguida, selecione o banco de dados "northwind".
+~~~
+
+![exemplo_finalizado](pictures/2_sql.png)
+
