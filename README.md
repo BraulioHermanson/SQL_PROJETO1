@@ -59,3 +59,14 @@ docker-compose up
 
 ![exemplo_finalizado](pictures/2_sql.png)
 
+3. **Parar** o Docker Compose Pare o servidor iniciado pelo comando docker-compose up usando Ctrl-C e remova os contêineres com:
+~~~html
+docker-compose down
+~~~
+
+4. **Arquivos e Persistência**
+
+Suas modificações nos bancos de dados Postgres serão persistidas no volume Docker `postgresql_data` e podem ser recuperadas reiniciando o Docker Compose com `docker-compose up`. Para deletar os dados do banco, execute:
+ ~~~html
+docker-compose down -v
+ ~~~
